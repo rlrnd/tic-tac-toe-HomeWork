@@ -1,0 +1,29 @@
+This database encodes the complete set of possible board configurations at the end of tic-tac-toe games, 
+where “x” is assumed to have played first. 
+The target concept is “win for x” (i.e., true when “x” has one of 8 possible ways to create a “three-in-a-row”).
+
+First nine attributes are representing nine fields on tic-tac-toe board and 
+tenth is class attribute which contains information if x player won.
+
+Attribute information:
+
+    TL : top left square {x,o,b}
+    TM : top middle square {x,o,b}
+    TR : top right square {x,o,b}
+    ML : middle left square {x,o,b}
+    MM : middle middle square {x,o,b}
+    MR : middle right square {x,o,b}
+    BL : bottom left square {x,o,b}
+    BM : bottom middle square {x,o,b}
+    BR : bottom right square {x,o,b}
+
+    Where:
+        x : x player
+        o : o player
+        b : blank square
+
+    class : {true,false}
+
+    Where:
+        true: x won
+        false: x lost
